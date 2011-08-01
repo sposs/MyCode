@@ -8,7 +8,7 @@ class Joueur(object) :
 		self.compte = 0
 		self.partieGagnee = 0
 	def creerJeuDeCartes(self) :
-		return self JeuDeCartes()
+		return self.JeuDeCartes()
 
 class JeuDeCartes(object) :
 	def __init__(self) : 
@@ -22,9 +22,10 @@ class JeuDeCartes(object) :
 		return "{0} de {1}".format(val,coul)
 	def battre(self) :
 		t = len(self.listCartes)
-		for elt in range(t)
+		for elt in range(t):
 			c1,c2 = randrange(t), randrange(t)
 			self.listCartes[c1], self.listCartes[c2] = self.listCartes[c2], self.listCartes[c1]
 	def tirer(self) :
 		print "carte tirée = {0} ".format(self.nomCartes(self.listCartes[0]))
 		del self.listCartes[0]
+
