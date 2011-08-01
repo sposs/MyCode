@@ -1,5 +1,8 @@
 #!/usr/bin/python
 
+""" Code not so well documented
+"""
+
 import os
 from random  import randrange
 
